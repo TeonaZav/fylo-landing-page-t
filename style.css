@@ -1,0 +1,689 @@
+/*Colors
+#F2F2F2; background
+#2F65F8
+#575988
+
+#615F7E font
+#3DA08F
+#07043B
+#F8F8FE
+#FFFFFF
+
+#C2C2C2 email placeholder
+#000000
+fonts:
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+ */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@700&display=swap");
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f2f2f2;
+  scroll-behavior: smooth;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden !important;
+}
+.header {
+  width: 100vw;
+}
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.heading-primary {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  font-weight: 700;
+  color: #07043b;
+  margin: 0 2.7rem 0 2.8rem;
+  text-align: center;
+}
+.heading-secondary,
+.main-nav-link,
+.btn,
+.input {
+  font-family: "Raleway", sans-serif;
+}
+.text {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  font-weight: 400;
+  text-align: center;
+}
+.btn {
+  cursor: pointer;
+}
+/***************** HEADER NAVIGATION*******************/
+.logo {
+  width: 8rem;
+  height: 2.4rem;
+  margin: 2.4rem 0 0 2.4rem;
+}
+.main-nav {
+  margin-top: 2.9rem;
+  margin-right: 2.9rem;
+  margin-bottom: 10.3rem;
+}
+.main-nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.main-nav-list li {
+  display: inline-block;
+}
+.main-nav-list li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+.main-nav-link {
+  text-decoration: none;
+  color: #07043b;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-weight: 400;
+}
+/***************** SECTION HERO *******************/
+.hero {
+  margin-bottom: 9rem;
+}
+.hero-img {
+  max-width: 30.4rem;
+  max-height: 22.5rem;
+  margin: 0 3.5rem 4rem 3.6rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+.hero-description {
+  color: #07043b;
+  margin: 0 4.3rem 0 3.6rem;
+  max-width: 29.6rem;
+}
+.form-container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+
+  margin: 0 3.3rem 0 3.8rem;
+}
+.form-container-2 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+.input-sign-up {
+  display: inline-block;
+  width: 30.4rem;
+  height: 4rem;
+  border: 0.625px solid #07043b;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+  border-radius: 3.125px;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+  padding: 1.4rem 0rem 1.2rem 2.1rem;
+  outline: none;
+}
+.input-sign-up::placeholder {
+  color: #c2c2c2;
+}
+.error-txt {
+  display: none;
+}
+
+.btn-get-started {
+  display: inline-block;
+  background-color: #2f65f8;
+  width: 30.4rem;
+  height: 4rem;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+  border-radius: 3.125px;
+  border: none;
+  color: #ffffff;
+}
+/***************** section main *****************/
+.section-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/bg-curve-mobile.svg");
+  background-size: 460% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-img {
+  margin-top: 9.3rem;
+  margin-bottom: 8.7rem;
+  max-width: 32rem;
+  max-height: 24.1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.main-text-box {
+  max-width: 32rem;
+  margin-top: 8.7rem;
+  margin: 0 3.5rem 3.6rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.heading-secondary {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  color: #07043b;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+.main-description {
+  color: #615f7e;
+}
+.main-description--top {
+  margin-bottom: 1.6rem;
+}
+
+.btn-features {
+  color: #3da08f;
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.64rem;
+  font-weight: 400;
+  text-underline-offset: 0.6rem;
+}
+
+.icon-arrow {
+  height: 1.2rem;
+  width: 1.2rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.testimonials {
+  margin-top: 4rem;
+  background-color: #ffffff;
+  width: 28rem;
+  height: 16.9rem;
+  padding: 2rem 1.7rem 0 2.6rem;
+  box-shadow: 0px 0px 8px 4px rgba(56, 56, 56, 0.0458843);
+  border-radius: 0.4rem;
+  margin-bottom: 8.2rem;
+}
+.testimonial-img {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+}
+.img-name-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.7rem;
+}
+.tertimonial-text {
+  color: #07043b;
+  font-size: 1rem;
+  line-height: 1.81rem;
+  font-weight: 400;
+  margin-bottom: 1.3rem;
+}
+.testimonial-name {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  font-weight: 700;
+  color: #07043b;
+}
+.testimonial-name span {
+  font-size: 0.6rem;
+  font-weight: 400;
+}
+
+/************************ section signUp ********************/
+.section-sign-up {
+  background-color: #575988;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5.4rem 4.7rem 7.1rem 4.8rem;
+}
+.sign-up-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 2.4rem;
+  max-width: 28rem;
+}
+.btn-get-started-sign-up {
+  padding: 1.1rem 0.7rem 0.9rem 0.71rem;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  width: 24rem;
+  height: 3.2rem;
+}
+
+.input-sign-up-2 {
+  width: 24rem;
+  height: 3.2rem;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  padding: 1.1rem 0rem 0.9rem 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.heading-seconary-white {
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+.sign-up-description {
+  color: #ffffff;
+}
+/********************* footer ***********************/
+footer {
+  background-color: #07043b;
+  width: 100vw;
+  padding: 6.5rem 3.9rem 4.2rem 3.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.logo-light {
+  width: 10.5rem;
+  height: 3rem;
+  margin-bottom: 3.2rem;
+}
+.footer-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+address {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.adress-box {
+  display: flex;
+  gap: 2rem;
+}
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-nav-list {
+  list-style-type: none;
+}
+.footer-nav-list li:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+.footer-nav-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.6rem;
+  line-height: 2.179rem;
+  font-weight: 400;
+  font-style: normal;
+  transition: all 0.3s;
+}
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.social-links li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 1rem;
+}
+.social-icon {
+  color: #dfe4f0;
+  padding: 0.5rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  border: 0.1px solid #dfe4f0;
+  border-radius: 50%;
+}
+
+/************************DESCTOP ********************
+/*****************************************************/
+
+/* more than 1440PX (for desktop )*/
+@media (min-width: 90em) {
+  .heading-primary {
+    font-family: "Raleway", sans-serif;
+    font-size: 4rem;
+    line-height: 6rem;
+    text-align: left;
+    margin: 0;
+  }
+  .error-txt {
+    margin-top: 0.4rem;
+    display: inline-block;
+    line-height: 1.6rem;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    opacity: 0;
+  }
+  .error-txt {
+    margin-top: 0;
+  }
+  .text {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: left;
+    margin: 0;
+  }
+  .hero-text-box {
+    margin: 0;
+    padding: 0;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+  .input {
+    display: inline-block;
+  }
+
+  /***************** HEADER NAVIGATION*******************/
+  .heading-primary,
+  .heading-secondary {
+    margin: 0;
+  }
+  .logo {
+    width: 16.6rem;
+    height: 4.9rem;
+    margin: 6.5rem 0 0 8rem;
+  }
+  .main-nav {
+    margin-top: 8rem;
+    margin-right: 8rem;
+    margin-bottom: 0rem;
+  }
+  .main-nav-list li:not(:last-child) {
+    margin-right: 5.7rem;
+  }
+  .main-nav-link {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+  /***************** SECTION HERO *******************/
+
+  .hero {
+    margin-bottom: 16.4rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 1.3rem;
+    padding: 10.1rem 8rem 0rem 8rem;
+    margin-bottom: 16.4rem;
+  }
+  .hero-img {
+    max-width: 64rem;
+    max-height: 47.4rem;
+    margin: 0;
+    display: inline-block;
+  }
+  .hero-text-box {
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    max-width: 62.7rem;
+    letter-spacing: 0.53px;
+    align-items: flex-start;
+  }
+  .hero-description {
+    margin: 0;
+    max-width: 58.5rem;
+    font-size: 1.7rem;
+  }
+  .form-container {
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    align-items: center;
+    gap: 1.6rem;
+    margin: 0;
+  }
+  .form-container-1 {
+    flex-direction: row-reverse;
+  }
+  .input-sign-up {
+    width: 32rem;
+    height: 4.5rem;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+  }
+
+  .btn-get-started {
+    width: 32rem;
+    height: 4.5rem;
+  }
+  .input-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  /***************** section main *****************/
+  .section-main-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 9rem;
+    background-image: url("images/bg-curve-desktop.svg");
+    background-size: 350% 100%;
+    background-position: center center;
+    padding: 17.8rem 8rem 10.7rem 8rem;
+  }
+
+  .main-img {
+    margin: 0;
+    max-width: 54.2rem;
+    max-height: 40.9rem;
+    display: inline-block;
+  }
+  .main-text-box {
+    min-width: 65rem;
+    margin: 0;
+    margin-bottom: 4.8rem;
+    align-items: flex-start;
+  }
+  .main-container {
+    align-items: flex-start;
+  }
+  .heading-secondary {
+    font-size: 4rem;
+    line-height: 4.6rem;
+    font-weight: 700;
+    margin-bottom: 3.8rem;
+    text-align: left;
+    font-style: normal;
+  }
+  .main-description-container {
+    max-width: 52.9rem;
+  }
+  .main-description-container--top {
+    margin-bottom: 1.6rem;
+  }
+  .main-description {
+    font-size: 1.6rem;
+  }
+
+  .btn-features {
+    line-height: 2.2rem;
+    margin-bottom: 5.7rem;
+  }
+  .btn-features:hover {
+    color: #71dfcc;
+  }
+  .testimonials {
+    margin: 0;
+    width: 35.6rem;
+    height: 21.5rem;
+    padding: 3rem 3.4rem 0 3.3rem;
+    border-radius: 0.5rem;
+  }
+  .testimonial-img {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+  }
+  .img-name-container {
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+  }
+  .tertimonial-text {
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    margin-bottom: 1.6rem;
+  }
+  .testimonial-name {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.55px;
+  }
+  .testimonial-name span {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.36px;
+  }
+
+  /************************ section signUp ********************/
+  .section-sign-up {
+    display: flex;
+    flex-direction: row;
+    gap: 22.7rem;
+    align-items: flex-start;
+    padding: 10rem 12rem 8.5rem 8rem;
+  }
+  .sign-up-text-box {
+    align-items: flex-start;
+    gap: 1.7rem;
+    margin-bottom: 0rem;
+    max-width: 53.3rem;
+  }
+  .btn-get-started-sign-up {
+    padding: 1.6rem 2.2rem;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    width: 20rem;
+    height: 4.8rem;
+  }
+
+  .input-sign-up-2 {
+    width: 48rem;
+    height: 4.8rem;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    padding: 1.6rem 0rem 1.8rem 2.2rem;
+  }
+
+  .heading-seconary-white {
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+  }
+  .form-container-2 {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  /********************* footer ***********************/
+  footer {
+    padding: 9.3rem 26rem 8.6rem 8rem;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .logo-light {
+    width: 13.5rem;
+    height: 3.9rem;
+    margin-bottom: 3.7rem;
+  }
+  .logo-address-box {
+    margin-right: 22.2rem;
+  }
+  .list-1 {
+    margin-right: 20rem;
+  }
+  .list-2 {
+    margin-right: 18.5rem;
+  }
+  .social-icon:hover {
+    color: #6c9bff;
+    border: 0.1px solid #6c9bff;
+  }
+  .footer-nav-link:hover {
+    color: #6c9bff;
+  }
+
+  /*desctop active */
+  .btn:hover,
+  .btn:active {
+    background-color: #6c9bff;
+  }
+
+  .btn-get-started:active ~ .input-wrapper > .input-sign-up-1 {
+    border: 1px solid rgb(226, 43, 119);
+  }
+  .btn-get-started:active ~ .input-wrapper > .error-txt {
+    opacity: 1;
+    color: rgb(226, 43, 119);
+    font-size: 1.2rem;
+  }
+  .btn-get-started-sign-up:active ~ .input-sign-up-2 {
+    border: 1px solid rgb(226, 43, 119);
+  }
+  .btn-get-started-sign-up:active + .error-txt-2 {
+    display: block;
+    color: #ffffff;
+    opacity: 2;
+  }
+}
