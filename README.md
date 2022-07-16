@@ -13,7 +13,7 @@ This is a solution to the [Fylo landing page with two column layout challenge on
 
 ### The challenge
 
-Our challenge was to build out this Four card feature section page using any tools, and get it looking as close to the design as possible. Also View the optimal layout for the site depending on our device's screen size;
+Our challenge was to build out this Fylo landing page using any tools, and get it looking as close to the design as possible. Also View the optimal layout for the site depending on our device's screen size;
 
 - See hover states for all interactive elements on the page
 
